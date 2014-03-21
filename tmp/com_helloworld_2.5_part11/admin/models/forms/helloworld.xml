@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_helloworld/models/rules"
+><!-- relole di validazione -->
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="greeting"
+			type="text"
+			label="COM_HELLOWORLD_HELLOWORLD_GREETING_LABEL"
+			description="COM_HELLOWORLD_HELLOWORLD_GREETING_DESC"
+			size="40"
+			class="inputbox validate-greeting"
+			validate="greeting"
+			required="true"
+			default=""
+		/> <!-- classe di validazione con lo stesso nome vedi greeting 
+		class -> creo file js con lo stesso nome dell'xml validate- è di joomla 
+		se metto solo inputbox la validazione non è più java ma è presa dal file php contenuto in rules -->
+	</fieldset>
+</form>
